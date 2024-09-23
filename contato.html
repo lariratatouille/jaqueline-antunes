@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato - Jaqueline Antunes</title>
+    <link rel="icon" href="img/logo.PNG" type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,7 +25,7 @@
             border-radius: 8px;
             padding: 20px;
             margin: auto;
-            max-width: 400px;
+            max-width: 90%; /* Ajustado para 90% */
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
@@ -47,37 +48,24 @@
         .map-container iframe {
             border: 0;
             width: 100%;
-            max-width: 400px;
-            height: 300px;
+            height: 300px; /* Altura padrão */
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         @media (max-width: 768px) {
             .contact-info {
-                max-width: 100%; 
+                max-width: 95%; /* Aumenta a largura em telas menores */
                 padding: 15px;
             }
 
             .map-container iframe {
-                width: 100%;
-                height: 250px;
+                height: 200px; /* Altura ajustada para dispositivos móveis */
             }
 
             section {
-                padding: 15px;
+                padding: 10px; /* Reduzindo o padding */
             }
-        }
-
-        nav ul li {
-            display: block;
-            margin: 10px 0;
-        }
-
-        header {
-            background-color: #f8f8f8;
-            padding: 20px;
-            text-align: center;
         }
 
         nav ul {
@@ -88,6 +76,12 @@
         nav ul li {
             display: inline;
             margin: 0 15px;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
@@ -116,7 +110,7 @@
             <p><strong>Sábado:</strong> 9:00 - 13:00</p>
             <p>Para agendamentos ou mais informações, ligue para o número abaixo:</p>
             <p><strong>Telefone:</strong> 
-                <a href="https://wa.me/5519981080780?text=Olá, Olá entrei em contato pelo seu site gostaria de mais informações!" target="_blank">(19) 98108-0780</a>
+                <a href="https://wa.me/5519981080780?text=Olá, entrei em contato pelo seu site gostaria de mais informações!" target="_blank">(19) 98108-0780</a>
             </p>
         </div>
 
