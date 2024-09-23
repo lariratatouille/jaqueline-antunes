@@ -53,10 +53,9 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        /* Ajustes para dispositivos móveis */
         @media (max-width: 768px) {
             .contact-info {
-                max-width: 100%; /* Largura total em dispositivos móveis */
+                max-width: 100%; 
                 padding: 15px;
             }
 
@@ -69,10 +68,45 @@
                 padding: 15px;
             }
         }
+
+        nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
     </style>
 </head>
 
 <body>
+    <header>
+        <h1>Jaqueline Antunes</h1>
+        <nav>
+            <ul>
+                <li><a href="contato.html">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <section id="contato">
         <h2>Contato</h2>
 
@@ -82,15 +116,20 @@
             <p><strong>Segunda a Sexta:</strong> 9:00 - 18:00</p>
             <p><strong>Sábado:</strong> 9:00 - 13:00</p>
             <p>Para agendamentos ou mais informações, ligue para o número abaixo:</p>
-            <p><strong>Telefone:</strong> (19) 3458-7898</p>
+            <p><strong>Telefone:</strong> (19) 98108-0780</p>
         </div>
 
         <h3>Localização</h3>
         <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.8360818536876!2d-47.55681608465771!3d-22.739634785097973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c88baceb1f40a1%3A0x4d109f0a679bd4db!2sAv.%20Brasil%2C%20400%20-%20Vila%20Frezzarin%2C%20Americana%20-%20SP%2C%2013465-902%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1695472274591!5m2!1spt-BR!2sus" 
-                allowfullscreen=""
-                loading="lazy">
+            <a href="https://www.google.com/maps/place/R.+do+Níquel,+387+-+Vila+Mollon+IV" target="_blank">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3111.8360818536876!2d-47.55681608465771!3d-22.739634785097973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c88baceb1f40a1%3A0x4d109f0a679bd4db!2sR.+do+Níquel,+387+-+Vila+Mollon+IV!5e0!3m2!1spt-BR!2sus!4v1695472274591!5m2!1spt-BR!2sus" 
+                    allowfullscreen 
+                    loading="lazy">
+                </iframe>
+            </a>
+        </div>
+        
             </iframe>
         </div>
     </section>
