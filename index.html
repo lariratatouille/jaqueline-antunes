@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Jaqueline Antunes, cabeleireira especializada em cortes, colorações e tratamentos capilares.">
+    <title>Jaqueline Antunes</title>
+    <style type="text/css">
+        .whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+        }
+        
+        .whatsapp img {
+            width: 100%;
+            height: auto;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: palevioletred;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .galeria img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .galeria {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .galeria img {
+                max-width: 90%;
+            }
+
+            .whatsapp {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Jaqueline Antunes</h1>
+        <nav>
+            <ul>
+                <li><a href="contato.html">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Bem-vindo ao meu portfólio!</h2>
+        <img src="img/1.jpg" alt="Cabeleireira em ação realizando um corte de cabelo">
+        <p>Transformando cabelos com amor e dedicação.</p>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Minha experiência e formação na área de beleza.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+        <ul>
+            <li>Corte de cabelo</li>
+            <li>Coloração</li>
+            <li>Tratamentos capilares</li>
+        </ul>
+    </section>
+
+    <section id="portfolio">
+        <h2>Meu Portfólio</h2>
+        <div class="galeria">
+            <img src="img/1.jpg" alt="Exemplo de corte de cabelo">
+            <img src="img/1.jpg" alt="Exemplo de coloração de cabelo">
+            <img src="img/1.jpg" alt="Exemplo de tratamento capilar">
+        </div>
+    </section>
+
+    <section id="depoimentos">
+        <h2>Depoimentos</h2>
+        <blockquote>
+            <p>Melhor cabeleireira da cidade!</p>
+            <cite>Cliente Satisfeito</cite>
+        </blockquote>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jaqueline Antunes. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="https://wa.me/seunumerodetelefone" class="whatsapp" target="_blank">
+        <img src="img/whatsapp.PNG" alt="WhatsApp" />
+    </a>
+</body>
+</html>
