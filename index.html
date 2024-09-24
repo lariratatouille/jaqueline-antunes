@@ -37,14 +37,14 @@
             background-color: #f8f8f8;
             padding: 20px;
             display: flex;
+            flex-direction: column; /* Mudança para direção em coluna */
             align-items: center;
-            justify-content: space-between; /* Mudança para espaço entre logo e menu */
         }
 
         .header-content {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center; /* Centraliza o conteúdo do cabeçalho */
             width: 100%;
             max-width: 1200px;
         }
@@ -52,7 +52,7 @@
         nav ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
+            margin: 10px 0; /* Espaçamento acima e abaixo do menu */
             display: flex;
             justify-content: center;
             flex-wrap: wrap; /* Permite que os itens do menu se ajustem em várias linhas, se necessário */
@@ -60,41 +60,6 @@
 
         nav ul li {
             margin: 0 15px;
-        }
-
-        /* Estilo do botão de menu para dispositivos móveis */
-        .menu-toggle {
-            display: none; /* Escondido por padrão */
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        .menu-toggle div {
-            width: 30px;
-            height: 3px;
-            background-color: black;
-            margin: 5px 0;
-        }
-
-        /* Estilos responsivos */
-        @media (max-width: 768px) {
-            nav ul {
-                display: none; /* Esconde o menu padrão */
-                flex-direction: column; /* Coloca os itens em coluna */
-                width: 100%; /* Largura total do menu */
-                background: #f8f8f8; /* Cor de fundo do menu */
-                position: absolute; /* Posiciona o menu sobre o conteúdo */
-                top: 60px; /* Espaço para o cabeçalho */
-                left: 0;
-            }
-
-            nav ul.active {
-                display: flex; /* Mostra o menu quando ativo */
-            }
-
-            .menu-toggle {
-                display: flex; /* Mostra o botão de menu */
-            }
         }
 
         section {
@@ -144,6 +109,15 @@
             margin: 1%;
             border-radius: 8px;
         }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column; /* Coloca os itens em coluna */
+                width: 100%; /* Largura total do menu */
+                align-items: center; /* Centraliza os itens do menu */
+            }
+        }
     </style>
 </head>
 
@@ -152,13 +126,8 @@
         <div class="header-content">
             <a href="index.html"> <img src="img/logo.PNG" alt="logo" class="logo"> </a>
             <h1>Jaqueline Antunes</h1>
-            <div class="menu-toggle" id="menu-toggle">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
             <nav>
-                <ul id="menu">
+                <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#portfolio" onclick="togglePortfolio(event)">Portfólio</a></li>
@@ -226,12 +195,6 @@
             event.preventDefault();
             const section = document.querySelector('#portfolio');
             section.scrollIntoView({ behavior: 'smooth' });
-        });
-
-        // Funcionalidade do botão de menu
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('active');
         });
     </script>
 </body>

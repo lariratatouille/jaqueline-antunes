@@ -36,6 +36,7 @@
             background-color: #f8f8f8;
             padding: 20px;
             display: flex;
+            flex-direction: column; /* Mudança para direção em coluna */
             align-items: center;
             justify-content: center;
         }
@@ -43,7 +44,7 @@
         .header-content {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center; /* Centraliza o conteúdo do cabeçalho */
             width: 100%;
             max-width: 1200px;
         }
@@ -51,9 +52,10 @@
         nav ul {
             list-style-type: none;
             padding: 0;
-            margin: 0;
+            margin: 10px 0; /* Espaçamento acima e abaixo do menu */
             display: flex;
-            justify-content: center;
+            justify-content: center; /* Centraliza o menu */
+            flex-wrap: wrap; /* Permite que os itens do menu se ajustem em várias linhas, se necessário */
         }
 
         nav ul li {
