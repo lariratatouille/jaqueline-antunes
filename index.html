@@ -12,7 +12,7 @@
         rel="stylesheet">
 
     <style type="text/css">
-        /* Estilo existente */
+
         .whatsapp {
             position: fixed;
             bottom: 20px;
@@ -37,14 +37,14 @@
             background-color: #f8f8f8;
             padding: 20px;
             display: flex;
-            flex-direction: column; /* Mudança para direção em coluna */
+            flex-direction: column; 
             align-items: center;
         }
 
         .header-content {
             display: flex;
             align-items: center;
-            justify-content: center; /* Centraliza o conteúdo do cabeçalho */
+            justify-content: center; 
             width: 100%;
             max-width: 1200px;
         }
@@ -52,10 +52,10 @@
         nav ul {
             list-style-type: none;
             padding: 0;
-            margin: 10px 0; /* Espaçamento acima e abaixo do menu */
+            margin: 10px 0; 
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Permite que os itens do menu se ajustem em várias linhas, se necessário */
+            flex-wrap: wrap;
         }
 
         nav ul li {
@@ -98,24 +98,24 @@
             margin-right: 15px;
         }
 
-        /* Estilo para a galeria */
+       
         .galeria {
-            display: flex; /* Mantenha a galeria visível */
+            display: flex; 
             flex-wrap: wrap;
         }
 
         .galeria img {
-            width: 30%; /* Ajustar o tamanho das imagens */
+            width: 30%; 
             margin: 1%;
             border-radius: 8px;
         }
 
-        /* Estilos responsivos */
+   
         @media (max-width: 768px) {
             nav ul {
-                flex-direction: column; /* Coloca os itens em coluna */
-                width: 100%; /* Largura total do menu */
-                align-items: center; /* Centraliza os itens do menu */
+                flex-direction: column; 
+                width: 100%; 
+                align-items: center; 
             }
         }
     </style>
@@ -183,14 +183,14 @@
     </a>
 
     <script>
-        // Adicionando funcionalidade de rolagem suave ao clicar em "Serviços"
+    
         document.querySelector('a[href="#servicos"]').addEventListener('click', function (event) {
             event.preventDefault();
             const section = document.querySelector('#servicos');
             section.scrollIntoView({ behavior: 'smooth' });
         });
 
-        // Adicionando funcionalidade de rolagem suave ao clicar em "Portfólio"
+        
         document.querySelector('a[href="#portfolio"]').addEventListener('click', function (event) {
             event.preventDefault();
             const section = document.querySelector('#portfolio');

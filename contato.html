@@ -37,16 +37,13 @@
             padding: 20px;
             display: flex;
             flex-direction: column;
-            /* Mudança para direção em coluna */
             align-items: center;
-            justify-content: center;
         }
 
         .header-content {
             display: flex;
             align-items: center;
             justify-content: center;
-            /* Centraliza o conteúdo do cabeçalho */
             width: 100%;
             max-width: 1200px;
         }
@@ -55,12 +52,9 @@
             list-style-type: none;
             padding: 0;
             margin: 10px 0;
-            /* Espaçamento acima e abaixo do menu */
             display: flex;
             justify-content: center;
-            /* Centraliza o menu */
             flex-wrap: wrap;
-            /* Permite que os itens do menu se ajustem em várias linhas, se necessário */
         }
 
         nav ul li {
@@ -90,9 +84,7 @@
             color: #F1C27D;
         }
 
-        h1,
-        h2,
-        h3 {
+        h1, h2, h3 {
             font-family: 'Playfair Display', serif;
             background: linear-gradient(45deg, #CBA135, #F1C27D);
             -webkit-background-clip: text;
@@ -149,6 +141,12 @@
             section {
                 padding: 10px;
             }
+
+            nav ul {
+                flex-direction: column; 
+                width: 100%; 
+                align-items: center; 
+            }
         }
     </style>
 </head>
@@ -172,7 +170,7 @@
     <section id="contato">
         <h2>Contato</h2>
         <div class="contact-info">
-            <h3 style="font-size: 25px; font-family: 'Playfair Display', serif;
+            <h3 style="  font-family: 'Playfair Display', serif;
             background: linear-gradient(45deg, #CBA135, #F1C27D);
             -webkit-background-clip: text;
             color: transparent;">Entre em contato conosco!</h3>
