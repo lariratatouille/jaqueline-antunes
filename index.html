@@ -48,7 +48,6 @@
             flex-direction: column;
         }
 
-
         .logo {
             width: 100px;
             height: auto;
@@ -93,11 +92,10 @@
             text-align: center;
         }
 
-
         .galeria {
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
+            flex-wrap: wrap;
         }
 
         .galeria img {
@@ -152,8 +150,16 @@
                 bottom: 15px;
                 right: 15px;
             }
+
+            .galeria img {
+                width: 100%;
+            }
         }
     </style>
+
+    <script src="lightbox/js/jquery-1.11.0.min.js"></script>
+    <script src="lightbox/js/lightbox.min.js"></script>
+    <link href="lightbox/css/lightbox.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -172,6 +178,16 @@
                 </ul>
             </nav>
         </div>
+        <div id="principal">
+            <div id="data">
+                <script language="javascript" type="text/javascript">
+                    var dayName = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+                    var monName = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+                    var now = new Date();
+                    document.write("<p> Hoje é " + dayName[now.getDay()] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear() + ". </p>");
+                </script>
+            </div>
+        </div>
     </header>
 
     <section id="home">
@@ -183,28 +199,38 @@
 
     <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p>Minha experiência e formação na área de beleza.</p>
+        <p>
+            Sobre Mim<br>
+
+            Me chamo Jaqueline Antunes, sou cabeleireira há 8 anos e apaixonada pela minha profissão. Trabalhar no universo da
+            beleza é uma experiência enriquecedora, onde cada transformação capilar é uma oportunidade de expressar
+            minha dedicação e criatividade.<br>
+
+            Além de cabeleireira, também sou maquiadora profissional. É extremamente gratificante poder elevar a
+            autoestima dos meus clientes, utilizando minhas habilidades para realçar a beleza individual de cada um.
+            Cada detalhe é pensado com carinho e profissionalismo para oferecer um resultado único e satisfatório.</p>
     </section>
 
     <section id="servicos">
         <h2>Serviços</h2>
         <ul>
-            <li>Corte de cabelo</li>
+            <li>Corte de Cabelo</li>
             <li>Coloração</li>
             <li>Hidratação</li>
             <li>Escova</li>
-            <li>Progressiva</li>
+            <li>Alisamento Vegano</li>
             <li>Tonalização</li>
-            <li>Tratamentos capilares</li>
+            <li>Tratamentos Capilares</li>
+            <li>Maquiagem</li>
         </ul>
     </section>
 
     <section id="portfolio">
         <h2>Meu Portfólio</h2>
         <div class="galeria" id="portfolio-gallery">
-            <img src="img/1.jpg" alt="Exemplo de corte de cabelo">
-            <img src="img/1.jpg" alt="Exemplo de coloração de cabelo">
-            <img src="img/1.jpg" alt="Exemplo de tratamento capilar">
+            <a href="img/1.jpg" data-lightbox="foto"><img src="img/1.jpg" alt="Exemplo de corte de cabelo"></a>
+            <a href="img/1.jpg" data-lightbox="foto"><img src="img/1.jpg" alt="Exemplo de coloração de cabelo"></a>
+            <a href="img/1.jpg" data-lightbox="foto"><img src="img/1.jpg" alt="Exemplo de tratamento capilar"></a>
         </div>
     </section>
 
