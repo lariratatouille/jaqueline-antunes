@@ -157,6 +157,7 @@
         }
     </style>
 
+
     <script src="lightbox/js/jquery-1.11.0.min.js"></script>
     <script src="lightbox/js/lightbox.min.js"></script>
     <link href="lightbox/css/lightbox.css" rel="stylesheet" />
@@ -178,7 +179,18 @@
                 </ul>
             </nav>
         </div>
+        <div id="principal"></div>
+            <div id="data">
+                <script language="javascript" type="text/javascript">
+                    var dayName = ["domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado"];
+                    var monName = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+                    var now = new Date();
+                    document.write("<p> Hoje é " + dayName[now.getDay()] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear() + ". </p>");
+                </script>
+            </div>
+        </div>
     </header>
+ 
 
     <section id="home">
         <h2>Bem-vindo ao meu portfólio!</h2>
@@ -205,16 +217,16 @@
             <li>Alisamento Vegano</li>
             <li>Tonalização</li>
             <li>Tratamentos Capilares</li>
-            <li>Maquiagem para eventos em Santa Bárbara d'Oeste</li>
+            <li>Maquiagem </li>
         </ul>
     </section>
 
     <section id="portfolio">
         <h2>Meu Portfólio</h2>
         <div class="galeria" id="portfolio-gallery">
-            <a href="img/ondas.JPG" data-lightbox="foto"><img src="img/ondas2.jpg" alt="Exemplo de corte de cabelo"></a>
-            <a href="img/maquigem.JPG" data-lightbox="foto"><img src="img/maquigem2.jpg" alt="Exemplo de coloração de cabelo"></a>
-            <a href="img/liso.JPG" data-lightbox="foto"><img src="img/liso2.jpg" alt="Exemplo de tratamento capilar"></a>
+            <a href="img/ondas.JPG" data-lightbox="foto"><img src="img/ondas.JPG" alt="Exemplo de corte de cabelo"></a>
+            <a href="img/maquigem.JPG" data-lightbox="foto"><img src="img/maquigem.JPG" alt="Exemplo de coloração de cabelo"></a>
+            <a href="img/liso.JPG" data-lightbox="foto"><img src="img/liso.JPG" alt="Exemplo de tratamento capilar"></a>
         </div>
     </section>
 
